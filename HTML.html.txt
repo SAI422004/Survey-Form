@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lange="en">
+  <head>
+    <meta charset="UTF_8">
+    <title>survey-form</title>
+  <head>
+<body>
+ <header>
+  <h1 id="title"> Survey Form</h1>  
+  <p id="description">Thank you for Visiting the Survey Form</p>
+</header>
+
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name <input type="text" id="name" name="name" placeholder="Enter Your Name"required></label>
+      <label id="email-label" for="email">Email <input type="email" id="email" name="email" placeholder="Enter Your Email"required></label>
+        <label id="number-label" for="age">Age <input type="number" id="number" name="number" min="18" max="55" required placeholder="Enter Your Age"></label>
+         </fieldset>
+<!-------------secound field------->
+    <fieldset>
+      <label><br>Which option best describes your current role?</br>
+        <select id="dropdown">
+        <option value="">Select Current Role</option>
+        <option value="1">Student</option>
+        <option value="2">Full Time Job </option>
+        <option value="3">Full Time Learner</option>
+        <option value="4">Perfer Not to Say</option>
+        <option value="5">Other</option>
+        <select>
+      </label>
+
+      <label><br>Are you preparing For job?</br> </label>
+   <label for="Definitely"><input value="Definitely"  name="radio-group"  type="radio" class="inline"/> Definitely</lable>
+     <label for="Maybe">     <input value="Maybe" type="radio" name="radio-group" class="inline"/>Maybe</lable>
+    <label for="Not-sure"><input  value="Not-sure" type="radio" name="radio-group" class="inline"/> Not sure</lable>
+     
+      <label><br>What is your Laungage ?</br>
+      <select id="dropdown">
+        <option value="">Select an Option</option>
+        <option value="1">C/C++</option>
+        <option value="2">JAVA</option>
+        <option value="3">PYTHON</option>
+        <option value="4">HTML/CSS</option>
+        <select>
+      </label>
+
+
+  <label><br>What would you like to  improved? (Check all that apply)</br></label>
+        <label><input value="front-end-projects"  name="front-end-projects"  type="checkbox" class="inline"/>Front-end Projects</label>
+        <label><input value="back-end-projects" type="checkbox" name="back-end-projects" class="inline"/> Back-end Projects</label>
+        <label><input  value="Data Visualization" type="checkbox" name="data-visualization" class="inline"/> Data Visualization</label>
+        <label><input value="challenges"  name="challenges"  type="checkbox" class="inline"/> Challenges</label>
+        <label><input value="Functions" type="checkbox" name="Functions" class="inline"/> Functions</label>
+        <label><input  value="CSS" type="checkbox" name="CSS" class="inline"/> CSS</label>
+        <label><input value="Learning"  name="Learning"  type="checkbox" class="inline"/> Learning</label>
+        <label><input value="Projects" type="checkbox" name="Projects" class="inline"/> Projects</label>
+        <label><input  value="Libraries" type="checkbox" name="Libraries" class="inline"/> Libraries</label>
+      <label><input value="forum" type="checkbox" name="forum" class="inline"/> Forum</label>
+            <label><input  value="additional-courses" type="checkbox" name="additional-courses" class="inline"/> Additional Courses</label>
+     
+    </fieldset>
+     <fieldset>
+       <label>Any comments or suggestions?
+         <textarea placeholder="Enter Your Comments Here!..."></textarea>
+       </label>
+       <button id="submit">Sumbit</button>
+    </fieldset>
+
+  </form >
+</body>
+</html>
